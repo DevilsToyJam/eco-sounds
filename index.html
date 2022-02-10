@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ecosounds</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo" data-audio="honk">
+                <svg class="header__logo">
+                    <use xlink:href="./assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </div>
+            <nav class="menu">
+                <button class="menu__button-arrow">
+                    <svg class="header__logo menu__arrow-logo">
+                        <use xlink:href="./assets/svg/menu.svg#arrow"></use>
+                    </svg>
+                </button>
+                <ul class="menu__list">
+                    <li class="menu__lits-item">
+                        <button class="menu__button" data-audio="forest">Лес</button>
+                    </li>
+                    <li class="menu__lits-item">
+                        <button class="menu__button" data-audio="solovey">Соловей</button>
+                    </li>
+                    <li class="menu__lits-item">
+                        <button class="menu__button" data-audio="drozd">Дрозд</button>
+                    </li>
+                    <li class="menu__lits-item">
+                        <button class="menu__button" data-audio="zarynka">Зарянка</button>
+                    </li>
+                    <li class="menu__lits-item">
+                        <button class="menu__button" data-audio="javoronok">Жаворонок</button>
+                    </li>
+                    <li class="menu__lits-item">
+                        <button class="menu__button" data-audio="slavka">Славка</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <div class="main__container">
+                <div class="fonk-container">
+                    <h2 class="hero glitch layers" data-text="GET HONKED"><span>GET<br>HONKED</span></h2>
+                </div>
+                <button class="main__button">
+                    <svg class="main__button-svg">
+                        <use href="./assets/svg/sprite.svg#play"></use>
+                    </svg>
+                </button>
+                <div class="main__message">
+                    <button class="main__message-btn" data-audio="forest">
+                        <svg class="main__message-btn-svg">
+                            <use href="./assets/svg/cross.svg#cross"></use>
+                        </svg>
+                    </button>
+                    <h2 class="main__message-h2">Добро пожаловать на</h2>
+                    <h1 class="main__message-h1">Ecosounds</h1>
+                    <p class="main__message-p">Нажмите "Крестик" чтобы приступить к прослушиванию.</p>
+                    <p class="main__message-p">Или же нажмите на "Логотип" и откройте секретный уровень!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left-side">
+                <ul class="footer__list">
+                    <li class="footer__item">©</li>
+                    <li class="footer__item">2022</li>
+                    <li class="footer__item"><a href="https://github.com/devilstoyjam" class="footer__link">github</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <a href="https://rs.school/js-stage0/" class="footer__link">
+                    <svg class="footer__svg">
+                        <use xlink:href="./assets/svg/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".main__message"), {
+            max: 5,
+            speed: 400
+        });
+    </script>
+
+</body>
+
+</html>
